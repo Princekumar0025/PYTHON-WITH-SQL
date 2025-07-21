@@ -118,48 +118,6 @@ if choice==3:
                 conn.commit()
                 print('')
                 print('        sorry for the promlem sire/madame we see to it that the boy gets penalized severely.thank you')
-if choice==3:
-        print('')
-        print('       PROBLEM WITH SOFTWARE')
-        print('')
-        print('')
-        print('1.problem with sales')
-        print('2.problem with service')
-        print('3.problem with dor delivary boy or service boy')
-        print('')
-        a=int(input('please enter your choice:'))
-        print('')
-        if a==1:
-                cus_name=str(input('please enter your name:'))
-                phno1=int(input('please enter your phone no:'))
-                sa_name=str(input('please enter the name of the sales boy whom you dealed with:'))
-                prob=str(input('please enter your problem:'))
-                print('')
-                print('sorry for the problem sire/madam we will ensure that this does not happen next time . thank you')
-                insert2="insert into servive_prob values('"+cus_name+"',"+str(phno1)+",'"+sa_name+"','"+prob+"')"
-                c1.execute(insert2)
-                conn.commit
-        if a==2:
-                cus_name=str(input('please enter your name:'))
-                phno1=int(input('please enter your phone no:'))
-                se_name=str(input('please enter the name of the service boy you dealed with:'))
-                prob=str(input('please enter the problem you face:'))
-                print('')
-                print('sorry for the problem sire/madam we will ensure that this does not happen next time . thank you')
-                insert2="insert into servive_prob values('"+cus_name+"',"+str(phno1)+",'"+se_name+"','"+prob+"')"
-                c1.execute(insert2)
-                conn.commit
-        if a==3:
-                cus_name=str(input('please enter your name:'))
-                phno1=int(input('please enter your phone no:'))
-                name1=str(input('please enter the boys name:'))
-                prob=str(input('please enter the problem you have faced'))
-                insert2="insert into sb_prob values('"+cus_name+"',"+str(phno1)+",'"+name+"','"+prob+"')"
-     
-                c1.execute(insert2)
-                conn.commit()
-                print('')
-                print('sorry for the promlem sire/madame we see to it that the boy gets penalized severely.thank you')
 if choice==4:
         l="select * from rating_comment"
         c1.execute(l)
